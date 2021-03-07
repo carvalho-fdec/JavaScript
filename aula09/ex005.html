@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad culpa debitis nesciunt, rerum atque porro aut quas nemo, eligendi sequi maxime doloremque alias corporis ab dolor quos doloribus officiis adipisci?</p>
+    <p id="par1">Parágrafo id <strong>par1</strong></p>
+    <p class="par2">Parágrafo class par2</p>
+    <script>
+        window.alert(window.document.getElementsByTagName('h1')[0].innerText) //GETS = plural []
+        window.alert(document.getElementById('par1').innerHTML) //GET = singular
+        window.alert(document.getElementsByClassName('par2')[0].innerText)
+        
+        window.document.write('escrevendo com javascript<br>')
+        
+        window.document.writeln(document.querySelector('h1').innerText)
+        window.document.writeln(document.querySelector('p#par1').innerHTML)
+        window.document.writeln(document.querySelector('p.par2').innerText)
+    </script>
+</body>
+</html>

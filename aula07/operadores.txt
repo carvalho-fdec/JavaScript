@@ -1,0 +1,9 @@
+% resto
+** potência
+! negação
+!= diferente
+&& e
+|| ou
+teste? verdadeiro : falso
+5 == '5' verdadeiro
+5 === '5' falso

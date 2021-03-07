@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 004</title>
+    <style>
+        body {
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var valor = Number(window.prompt('valor?')) //prompt retorna string. converter senao da erro
+        document.write(`o valor em reais é ${valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`) //valor em R$
+        document.write(`<br>o valor formatado em 2 casas é ${valor.toFixed(2)}`) //valor com 2 casas decimais
+        //document.write(`o texto em maiusculo é ${valor.toUpperCase()}`)
+    </script>
+</body>
+</html>
